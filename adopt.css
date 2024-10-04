@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mohave&family=Montserrat:wght@400;700&family=Poppins:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+body {
+    background: #081b29;
+}
+
+.back {
+    width: 100%;
+    display: flex;
+}
+
+.back i {
+    font-size: 70px;
+    font-weight: 400;
+}
+
+
+/* main body */
+.about {
+    /* position: relative; */
+    background: #081b29;
+}
+
+.main {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.about-img img {
+    padding: 8px;
+    width: 80%;
+    border-radius: 40px;
+}
+
+.about-text h2 {
+    padding: 20px;
+    font-size: 60px;
+    color: #fff;
+
+}
+
+.about-text h2 span,
+h4 span {
+   color: rgb(54, 128, 124);
+}
+
+.about-text h4 {
+    font-size: 29px;
+    font-weight: 600;
+    color: white;
+    line-height: 1.7;
+    margin: 15px 0 30px;
+}
+
+.about-text p {
+    color: white;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+}
+
+.about-text p a {
+    color: white;
+
+}
+
+.about-text p a:hover {
+    color: #5f5c5c;
+
+}
+
+
+/* Videos */
+.frame{
+    width: 100%;
+    height: 100vh;
+}
+.content{
+    padding: 20px;
+    background: #081b29;
+    
+
+}
+
+.content h1 {
+    color: white;
+    text-align: center;
+    margin: 10px;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.video {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(5em,1fr));
+    align-items: center;
+    gap:2em;
+}
+
+.video iframe {
+    margin: 10px;
+    width: 90%;
+    height: 50vh;
+    border-radius: 20px;
+    box-shadow: 1px 4px 20px 10px rgb(40, 96, 100);
+}
+
+.video iframe:hover {
+    transform: translateY(-20px);
+}
+/* section-3 */
+.animal{
+    width:100%;
+}
+.heading{
+color: white;
+    text-align: center;
+    margin: 10px;
+    font-size: 48px;
+    font-weight: bold;
+}
+.box-container{
+    width: 100%;
+    padding: 60px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(1em,1fr));
+    align-items: center;
+    gap: 2em;
+}
+.box{
+    box-shadow: 1px 4px 20px 10px rgb(40, 96, 100);
+    position: relative;
+    width: 100%;
+    height:100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.box img{
+    border-radius: 20px;
+    width:100%;
+    height:80%;
+    object-fit: cover;
+}
+.box:hover img{
+    transform: scale(1.1);
+}
+.box-container.box.content{
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0; right: 0;
+    padding: 10px;
+    z-index: 1;
+    transition: 0.5s ease;
+}
+.box-container .box:hover::after{
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background:#000;
+    opacity: 0.5;
+    transition: 0.5s ease;
+  }
+
+.box .content h3{
+    text-align: center;
+    font-size: 40px;
+   color: white;
+  }
+  .box:is(:hover, :focus-within) .content{
+    transform: translateY(-20px);
+  }
+.text-footer {
+    padding: 30px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    background-color: #1E1E1E;
+}
+
+@media screen and (max-width: 1200px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .video {
+       display: grid;
+       grid-template-columns: repeat(2,3fr);
+    }
+    .video iframe {
+        width: 80%;
+        height:60vh 
+    }
+    .box-container{
+        display: grid;
+        grid-template-columns: repeat(2,3fr);
+     }
+     .box{
+        height: 60vh;
+     }
+
+    .box-container.box.content h3{
+        font-size: 14px ;
+    }
+
+}
+
+@media screen and (max-width: 850px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .video {
+        display: grid;
+        grid-template-columns: repeat(1,3fr);
+     }
+     .video iframe {
+         width: 100%;
+         height:60vh 
+     }
+     .box-container{
+         display: grid;
+         grid-template-columns: repeat(1,3fr);
+      }
+      .box{
+         height: 60vh;
+      }
+
+}

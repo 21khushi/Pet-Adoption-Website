@@ -1,0 +1,134 @@
+body {
+  
+    background: #081b29;
+}
+
+.box {
+    text-align: center;
+    width: 600px;
+    height: 700px;
+    border: 3px solid black;
+    margin-left: 450px;
+    margin-top: 20px;
+    margin-right: 50px;
+    background-color: white;
+    /* box-shadow: 1px 4px 20px 10px #0ef; */
+    border-radius: 20px;
+}
+
+.name {
+    text-align: justify;
+    padding: 1em;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 350px;
+    width: 200px;
+    height: 10px;
+}
+
+.name2 {
+
+    text-align: justify;
+    padding: 1em;
+    margin-top: 20px;
+    margin-left: 0px;
+    margin-right: 350px;
+    width: 200px;
+    height: 10px;
+    transform: translate(150%, -150%);
+}
+
+.mail {
+    text-align: justify;
+    padding: 1em;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 350px;
+    width: 200px;
+    height: 10px;
+    transform: translate(0%, -150%);
+}
+
+.phone {
+    text-align: justify;
+    padding: 1em;
+    margin-top: 20px;
+    margin-left: 0px;
+    margin-right: 350px;
+    width: 200px;
+    height: 10px;
+    transform: translate(150%, -290%);
+}
+
+#COUNTRY {
+
+    margin-right: 10px;
+    width: 520PX;
+    height: 40PX;
+    transform: translateY(-210%);
+}
+
+.city {
+    text-align: justify;
+
+    padding: 1em;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 700px;
+    width: 500px;
+    height: 10px;
+    transform: translate(2%, -150%);
+}
+
+.add {
+    text-align: justify;
+    padding: 1em;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 700px;
+    width: 500px;
+    height: 10px;
+    transform: translate(2%, -100%);
+}
+
+#position {
+    margin-right: 10px;
+    width: 520PX;
+    height: 40PX;
+    transform: translateY(20%);
+}
+
+.additional {
+
+    padding: 1em;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 700px;
+    width: 500px;
+    height: 100px;
+    transform: translate(2%, 20%);
+}
+
+.review {
+
+    padding: 1em;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 700px;
+    width: 500px;
+    height: 10px;
+    transform: translate(2%, 90%);
+}
+
+.form_submit {
+
+    background-color: rgb(51, 34, 4);
+    color: white;
+    transform: translate(200%, 30%);
+    height: 20px;
+}
+
+.form_submit:hover {
+    background-color: orange;
+    color: aliceblue;
+}

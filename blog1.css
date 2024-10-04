@@ -1,0 +1,338 @@
+body{
+    background: linear-gradient(to top,rgb(254, 251, 251),rgb(83,141,192));
+    
+}
+.heading{
+    font-family: 'Comic Neue Bold',Helvetica,Arial,Lucida,sans-serif;
+    font-weight: 700;
+    font-size: 80px;
+    color:white;
+    line-height: 1.2em;
+    margin-left: 25%;
+}
+.slides{
+    width: 70%;
+    height: 400px;
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    background-image: url(image1.webp) ;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transform: translate(-50%,-50%);
+    box-shadow: 1px 2px 20px 10px rgb(5,5,70);;
+    animation: slider 12s infinite linear;
+    opacity: 0.9;
+   
+
+}
+@keyframes slider {
+    0%{
+        background-image: url(image1.webp);
+        background-size: 100% 100%;
+    }
+    35%{
+        background-image: url(image4.webp);
+        background-size: 100% 100%;
+
+    }
+    75%{
+        background-image: url(image6.webp);
+        background-size: 100% 100%;
+    }
+    
+}
+.row1{
+    margin-top: 45%;
+    margin-left: 7%;
+    display: flex;
+    gap: 2em;
+    border-radius: 20px;
+  
+}
+.row2 {
+    margin-top: 4%;
+    margin-left: 10%;
+    margin-right: 15%;
+    display: flex;
+    gap: 2em;
+    font-family: 'Comic Neue Bold',Helvetica,Arial,Lucida,sans-serif!important;
+    font-weight: 700!important;
+    /* border: 1px solid white;
+    box-shadow: 1px 2px 5px 10px ; */
+}
+.row2 p {
+    font-weight: normal;
+  }
+.col1{
+    border: 2px solid rgb(5,5,70);
+    border-radius: 15px;
+    width: 40%;
+    margin-left: -5%;
+    padding: 40px;
+}
+/* .bg{
+   
+background-color: white;
+color: black;
+} */
+
+.col1 h2{
+   
+    color: rgb(5,5,70);
+    font-family: 'Comic Neue Bold',Helvetica,Arial,Lucida,sans-serif!important;
+    font-weight: 700!important;
+    margin-top: 3%;
+    margin-left: 10%;
+    margin-right: 15%;
+}
+.col1 p{
+    margin-top: 0%;
+    margin-left: 10%;
+    margin-right: 15%;
+    color: rgb(5,5,70);
+
+}
+
+.col2{
+    border: 2px solid  rgb(5,5,70);;
+    border-radius: 15px;
+    width: 40%;
+    padding: 40px;
+}
+
+.col2 h2{
+    color: rgb(5,5,70);
+    font-family: 'Comic Neue Bold',Helvetica,Arial,Lucida,sans-serif!important;
+    font-weight: 700!important;
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+    align-items: center;
+}
+.col2 p{
+    margin-top: 0%;
+    margin-left: 15%;
+    margin-right: 15%;
+    color: rgb(5,5,70);
+    
+}
+
+
+
+
+.col3{
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    border: 2px solid rgb(5,5,70);
+    border-radius: 15px;
+    width: auto;
+    margin-right: 10%;
+    padding-left: 10px;
+    margin-left: 20px;
+    padding: 40px;
+
+    /* padding: 5px 2px; */
+
+}
+
+
+.col3 h2{
+    color: rgb(5,5,70);
+    font-family: 'Comic Neue Bold',Helvetica,Arial,Lucida,sans-serif!important;
+    font-weight: 700!important;
+    margin-top: 5%;
+    margin-left: 3%;
+    align-items: center;
+}
+.col3 p{
+    margin-top: 0%;
+    margin-left: 4%;
+    margin-right: 15%;
+    color: rgb(5,5,70);
+}
+
+.row2{
+    margin-left: 6%;
+    margin-right: 0%;
+}
+
+.banner2{
+    margin-top: 5%;
+}
+
+
+.subscribe h2{
+    font-family: 'Comic Neue Bold',Helvetica,Arial,Lucida,sans-serif;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 1.2em;
+  margin-left: 30%;
+  margin-top: 15%;
+  color:rgb(5,5,70);
+}
+
+
+.name2{
+
+    text-align: justify;
+    padding: 1em;
+    margin-top: 20px;
+    
+    margin-right: 350px;
+    width: 500px;
+    height: 10px;
+    margin-left: 30%;
+}
+.mail{
+    text-align: justify;
+    padding: 1em;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 350px;
+    width: 500px;
+    height: 10px;
+    margin-left: 30% ;
+  
+}
+
+.butt{
+    margin-top: 4%;
+    margin-left: 40% ;
+    height: 5vh;
+    width: 10vw;
+  
+   
+}
+
+button:hover{
+    color:white;
+    background-color:rgb(5,5,70);
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: medium;
+    border: 2px solid black;
+}
+img{
+    transition: transform 0.2s;
+}
+
+img:hover{
+    transform: scale(1.05);
+    /* transform: rotate(180deg); */
+
+}
+
+
+
+
+/* @media only screen and (max-width:774px){
+    .logo{
+      font-size: 30px;
+    }  
+   }
+   @media only screen and (max-width:480px){
+    #button,.nav_list{
+      display: none;
+    }  
+    #menu{
+      display:block;
+      font-size: 7vw;
+    }
+   } */
+
+
+   /* Base styles for larger screens */
+body {
+    background: linear-gradient(to top, rgb(254, 251, 251), rgb(83, 141, 192));
+    font-family: 'Comic Neue Bold', Helvetica, Arial, Lucida, sans-serif;
+}
+
+/* Heading styles */
+.heading {
+    font-size: 80px;
+    color: white;
+    line-height: 1.2em;
+    margin-left: 25%;
+}
+
+/* Slideshow container */
+.slides {
+    width: 70%;
+    height: 400px;
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 1px 2px 20px 10px rgb(5, 5, 70);
+    animation: slider 12s infinite linear;
+    opacity: 0.9;
+}
+
+/* Row styles */
+.row1,
+.row2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 4%;
+}
+
+/* Column styles */
+.col1,
+.col2,
+.col3 {
+    width: 30%;
+    margin-bottom: 2%;
+}
+
+/* Image styles */
+img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 20px;
+}
+
+/* Responsive styles for smaller screens */
+@media only screen and (max-width: 768px) {
+    .heading {
+        font-size: 50px;
+        margin-left: 10%;
+    }
+
+    .slides {
+        width: 90%;
+    }
+
+    .row1,
+    .row2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col1,
+    .col2,
+    .col3 {
+        width: 95%;
+        margin-left: 0;
+    }
+
+    .name2,
+    .mail,
+    .butt {
+        width: 90%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .subscribe h2 {
+        font-size: 50px;
+        margin-left: 10%;
+        margin-top: 5%;
+    }
+
+    .butt {
+        margin-left: 5%;
+    }
+}

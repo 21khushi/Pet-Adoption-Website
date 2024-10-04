@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animal Filter And Search</title>
+    
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    
+    <link rel="stylesheet" href="viewmore.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="search-container">
+        <input
+          type="search"
+          id="search-input"
+          placeholder="Search animal breed here.." />
+        <button id="search">Search</button>
+      </div>
+      <div id="buttons">
+        <button class="button-value" onclick="filterAnimal('all')">All</button>
+        <button class="button-value" onclick="filterAnimal('Dog')">Dog</button>
+        <button class="button-value" onclick="filterAnimal('Cat')">Cat</button>
+        <button class="button-value" onclick="filterAnimal('Birds')">Birds</button>
+        
+      </div>
+      <div id="animals"></div>
+    </div>
+    
+    <script src="viewmore.js"></script>
+  </body>
+</html>
